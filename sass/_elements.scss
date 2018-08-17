@@ -1,0 +1,41 @@
+
+@import 'variables';
+
+
+/* Wordpress Elements */
+// Single Image
+//.wpb_content_element
+.wpb_single_image {
+  margin-bottom: 0 !important;
+}
+
+
+// separator with gradient
+%separator {
+  background: linear-gradient( to right, $gradient-pink, $gradient-turquoise);
+  box-shadow: 0px 0px 7px $gradient-violet;
+  border-top: none !important;
+}
+
+.vc_sep_line {
+  @extend %separator;
+}
+
+
+
+
+// // carousel
+// .kraft-carousel .owl-nav {
+//   bottom: 0;
+//   top: auto;
+//   transform: none;
+//   width: auto;
+//   right: 0;
+
+//   .owl-prev,
+//   .owl-next {
+//     background: $lightest-grey;
+//     color: $dark-grey;
+//   }
+// }
+

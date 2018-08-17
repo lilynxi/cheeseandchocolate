@@ -1,0 +1,93 @@
+
+@import 'variables';
+
+
+// body {
+//   background-color: $lightest-grey !important;
+// }
+
+// center & overflow fix
+div#main-wrapper.vc_container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Padding Container with white background
+.padding-container > div > div > div {
+  padding: $spacing;
+  background: $white;
+  box-shadow: 0px 0px 15px $box-shadow;
+}
+
+// Padding Container with two columns (directors page)
+.padding-container.two-column {
+  .wpb_single_image{
+    @media (min-width:$medium){
+      max-width: 50%;
+      float: left;
+    }
+  }
+}
+
+// margin bottom of vc_container
+#main-wrapper > .vc_container {
+  margin-bottom: $spacing;
+}
+
+
+
+
+
+
+
+
+
+
+
+// .home #main-wrapper .vc_container:nth-child(2),
+// .home #main-wrapper .vc_container:nth-child(4) {
+//   height: 0;
+// }
+
+// html.locked,
+// html.locked body {
+//   @media (max-width:$small){
+//     margin: 0;
+//     height: 100%;
+//     overflow: hidden;
+//   }
+// }
+
+// body {
+//   background: $lightest-grey;
+// }
+
+// // center & overflow fix
+// div#main-wrapper.vc_container {
+//   padding-left: 0;
+//   padding-right: 0;
+// }
+
+// .vc_row[data-vc-full-width]{
+//   overflow: visible !important;
+// }
+
+// /* Narrow Container */
+// .narrow-container {
+//   max-width: $narrow-container;
+//   margin: 0 auto;
+// }
+
+// /* Flex Container */
+// .flex-container {
+//   @extend .narrow-container;
+//   display: flex;
+//   flex-flow: column;
+  
+//   @media (min-width: $small){
+//     flex-flow: row;
+//   }
+// }
+
+
+

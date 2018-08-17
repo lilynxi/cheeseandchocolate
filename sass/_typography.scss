@@ -1,0 +1,69 @@
+
+@import 'variables';
+
+// Oswald: 200,300,400,500,600,700
+// TODO: remove unused font styles
+
+%headline {
+  font-family: $headline-font;
+  text-transform: uppercase;
+  color: $dark-grey-text;
+  font-size: 36px;
+  line-height: 1;
+}
+
+%headline-bold {
+  @extend %headline;
+  font-weight: 700 !important;
+}
+
+%headline-light {
+  @extend %headline;
+  font-weight: 300 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %headline-bold;
+}
+
+p {
+  color: $dark-grey-text;
+}
+
+a{
+  color: $dark-grey-text !important;
+
+  &:hover,
+  .current-menu-item > & {
+    color: $pink !important;
+  }
+}
+
+// Element Titles
+.heading-custom {
+  margin: 20px 0;
+
+  .heading,
+  .para {
+    margin: 0;
+    display: inline-block;
+  }
+
+  .heading {
+    @extend %headline-bold;
+  }
+
+  .para {
+    @extend %headline-light;
+
+    &::before {
+      content: "//";
+      margin: 0 10px;
+    }
+  }
+}
+
+.copyrights p {
+  font-size: 14px !important;
+  line-height: 1.4;
+}
