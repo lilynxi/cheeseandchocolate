@@ -179,7 +179,19 @@ div#main-wrapper.vc_container {
 @media (min-width: 992px) {
   .padding-container.two-column .wpb_single_image {
     max-width: 50%;
-    float: left;
+    float: right;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .padding-container.two-column > div > div > div {
+    min-height: 340px;
+  }
+}
+@media (min-width: 1200px) {
+  .padding-container.two-column > div > div > div {
+    min-height: 406px;
   }
 }
 
@@ -241,6 +253,12 @@ div#main-wrapper.vc_container {
 }
 .kraft-carousel .owl-nav .owl-prev {
   margin-right: 1px;
+}
+
+.vc_btn3:hover {
+  border-color: #FC1368 !important;
+  color: #fff !important;
+  background-color: transparent !important;
 }
 
 header#header {

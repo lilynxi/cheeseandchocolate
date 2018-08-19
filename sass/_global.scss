@@ -34,8 +34,19 @@ div#main-wrapper.vc_container {
   .wpb_single_image{
     @media (min-width:$medium){
       max-width: 50%;
-      float: left;
+      float: right;
+      margin-left: 20px;
     }
+  }
+}
+
+// min-height for directors page
+.padding-container.two-column > div > div > div {
+  @media (min-width: $medium){
+    min-height: 340px;
+  }
+  @media (min-width: $large){
+    min-height: 406px;
   }
 }
 
