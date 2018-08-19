@@ -29,17 +29,20 @@
 
 
 // // carousel
-// .kraft-carousel .owl-nav {
-//   bottom: 0;
-//   top: auto;
-//   transform: none;
-//   width: auto;
-//   right: 0;
+.kraft-carousel .owl-nav {
+  bottom: 10px;
+  top: auto;
+  transform: none;
+  width: auto;
+  right: 10px;
 
-//   .owl-prev,
-//   .owl-next {
-//     background: $lightest-grey;
-//     color: $dark-grey;
-//   }
-// }
+  .owl-prev,
+  .owl-next {
+    background: $black;
+    color: $white;
+  }
+  .owl-prev {
+    margin-right: 1px;
+  }
+}
 

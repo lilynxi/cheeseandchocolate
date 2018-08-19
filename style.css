@@ -178,6 +178,22 @@ div#main-wrapper.vc_container {
   width: auto !important;
 }
 
+.kraft-carousel .owl-nav {
+  bottom: 10px;
+  top: auto;
+  transform: none;
+  width: auto;
+  right: 10px;
+}
+.kraft-carousel .owl-nav .owl-prev,
+.kraft-carousel .owl-nav .owl-next {
+  background: #222;
+  color: #fff;
+}
+.kraft-carousel .owl-nav .owl-prev {
+  margin-right: 1px;
+}
+
 header#header {
   background-color: transparent;
   margin: 0px !important;
