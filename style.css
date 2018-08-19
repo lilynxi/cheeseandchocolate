@@ -134,6 +134,15 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading {
   line-height: 1.5;
 }
 
+@media (max-width: 768px) {
+  html.locked,
+  html.locked body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 div#main-wrapper.vc_container {
   padding-left: 0;
   padding-right: 0;
@@ -204,9 +213,59 @@ header#header {
   }
 }
 
+@media (max-width: 768px) {
+  #logo {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+}
+@media (min-width: 768px) {
+  #logo {
+    margin-left: -40px;
+  }
+}
+@media (min-width: 992px) {
+  #logo {
+    margin-left: -45px;
+  }
+}
+@media (min-width: 1200px) {
+  #logo {
+    margin-left: -48px;
+  }
+}
+#logo .standard-logo,
+#logo .retina-logo {
+  max-height: 60px !important;
+}
+@media (min-width: 768px) {
+  #logo .standard-logo,
+  #logo .retina-logo {
+    max-height: 70px !important;
+  }
+}
+@media (min-width: 992px) {
+  #logo .standard-logo,
+  #logo .retina-logo {
+    max-height: 80px !important;
+  }
+}
+@media (min-width: 1200px) {
+  #logo .standard-logo,
+  #logo .retina-logo {
+    max-height: 100px !important;
+  }
+}
+
 @media (min-width: 768px) {
   #main-menu {
-    padding-top: 55px;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-menu.display-menu {
+    height: calc(100vh - 90px) !important;
   }
 }
 

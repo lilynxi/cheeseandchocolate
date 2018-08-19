@@ -1,10 +1,15 @@
 
 @import 'variables';
 
-
-// body {
-//   background-color: $lightest-grey !important;
-// }
+// lock scrolling when mobile nav is open
+html.locked,
+html.locked body {
+  @media (max-width:$small){
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+}
 
 // center & overflow fix
 div#main-wrapper.vc_container {
