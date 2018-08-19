@@ -4,6 +4,7 @@
 // Oswald: 200,300,400,500,600,700
 // TODO: remove unused font styles
 
+// Headline
 %headline {
   font-family: $headline-font;
   text-transform: uppercase;
@@ -17,29 +18,44 @@
   font-weight: 700 !important;
 }
 
-%headline-light {
+%headline-medium {
   @extend %headline;
   font-weight: 300 !important;
+}
+
+%headline-light {
+  @extend %headline;
+  font-weight: 200 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
   @extend %headline-bold;
 }
 
-p {
+// Title Testimonials
+.heading-custom h4.heading {
+  @extend %headline-medium;
+  font-size: 15px !important;
+  letter-spacing: 1px;
+  line-height: 1;
+  // position: relative;
+  // bottom: -12px;
+}
+
+// global paragraphs and links
+#page-wrapper p {
   color: $dark-grey-text;
 }
 
-a{
+#page-wrapper a{
   color: $dark-grey-text !important;
 
-  &:hover,
-  .current-menu-item > & {
+  &:hover {
     color: $pink !important;
   }
 }
 
-// Element Titles
+// Element Titles -> Bold + Light
 .heading-custom {
   margin: 20px 0;
 
@@ -63,6 +79,40 @@ a{
   }
 }
 
+// Main Navigation
+#menu-main-menu {
+  & > li {
+    @media (min-width: $small){
+      margin-left: 20px !important;
+    }
+  }
+  li.current-menu-item > a,
+  li.current-menu-parent > a {
+    color: $pink !important;
+  }
+  a {
+    @extend %headline-medium;
+    font-size: 15px !important;
+  }
+}
+
+// Filters
+#filters-container {
+  position: absolute;
+  top: -45px;
+  width: 100%;
+  left: 0;
+
+  .cbp-filter-item-active {
+    color: $pink;
+  }
+  .cbp-filter-item {
+    @extend %headline-medium;
+    font-size: 15px;
+  }
+}
+
+// Footer Text
 .copyrights p {
   font-size: 14px !important;
   line-height: 1.4;
