@@ -147,6 +147,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.project-single {
+  .project-title {
+    display: none;
+  }
+  .details-top {
+    margin-top: 0;
+  }
+}
+
+
 // Footer Text
 .copyrights p {
   @extend %headline-medium;

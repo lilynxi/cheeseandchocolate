@@ -137,6 +137,13 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
   color: #595959 !important;
 }
 
+.project-single .project-title {
+  display: none;
+}
+.project-single .details-top {
+  margin-top: 0;
+}
+
 .copyrights p {
   font-size: 14px !important;
   letter-spacing: 1px;
@@ -157,6 +164,12 @@ div#main-wrapper.vc_container {
   padding-right: 0;
 }
 
+@media (min-width: 768px) {
+  .project-single > .vc_container {
+    padding-left: 0;
+  }
+}
+
 .padding-container > div > div > div {
   padding: 20px;
   background: #fff;
@@ -167,6 +180,24 @@ div#main-wrapper.vc_container {
   .padding-container.two-column .wpb_single_image {
     max-width: 50%;
     float: left;
+  }
+}
+
+.project-single .vc_col-sm-12 > .vc_container {
+  margin-bottom: 20px;
+}
+.project-single #portfolio-container {
+  margin-top: 0 !important;
+}
+.project-single .project-nav {
+  margin-top: 0;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 15px #DDD;
+}
+@media (min-width: 768px) {
+  .project-single > .vc_container > .vc_row > .vc_col-sm-12 {
+    padding-right: 0;
   }
 }
 
