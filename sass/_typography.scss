@@ -134,6 +134,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// Portfolio Items
+#portfolio-container {
+  .cbp-l-grid-agency-title {
+    @extend %headline-bold;
+    font-size: 16px;
+    color: $dark-grey-text !important;
+  }
+  .cbp-l-grid-agency-desc {
+    margin-top: 4px;
+    color: $dark-grey-text !important;
+  }
+}
+
 // Footer Text
 .copyrights p {
   @extend %headline-medium;

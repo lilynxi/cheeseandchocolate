@@ -18,14 +18,14 @@
 /* Colors */
 /* Gradient */
 /* Typography */
-h1, h2, h3, h4, h5, h6, .heading-custom .heading, .heading-custom h4.heading, #menu-main-menu a, #filters-container .cbp-filter-item, .copyrights p, .heading-custom .para {
+h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-grid-agency-title, .heading-custom h4.heading, #menu-main-menu a, #filters-container .cbp-filter-item, .copyrights p, .heading-custom .para {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #595959;
   line-height: 1;
 }
 
-h1, h2, h3, h4, h5, h6, .heading-custom .heading {
+h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-grid-agency-title {
   font-weight: 700 !important;
 }
 
@@ -126,6 +126,15 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading {
 }
 #filters-container .cbp-filter-item {
   font-size: 15px;
+}
+
+#portfolio-container .cbp-l-grid-agency-title {
+  font-size: 16px;
+  color: #595959 !important;
+}
+#portfolio-container .cbp-l-grid-agency-desc {
+  margin-top: 4px;
+  color: #595959 !important;
 }
 
 .copyrights p {
