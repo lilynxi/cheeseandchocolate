@@ -8,20 +8,12 @@ footer#footer {
 }
 
 .copyrights {
-  max-width: 1170px;
   margin: 0 auto;
-  //padding: 0 15px !important;
   padding: 0 30px !important;
   border-top: none !important;
 
   @media (min-width:$small){
     max-width: 750px;
-  }
-  @media (min-width:$medium){
-    max-width: 970px;
-  }
-  @media (min-width:$large){
-    max-width: 1170px;
   }
 }
 
