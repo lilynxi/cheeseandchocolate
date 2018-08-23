@@ -159,6 +159,13 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
   }
 }
 
+@media (min-width: 768px) {
+  .vc_container {
+    width: 90vw;
+    max-width: 970px;
+  }
+}
+
 div#main-wrapper.vc_container {
   padding-left: 0;
   padding-right: 0;

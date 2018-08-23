@@ -11,6 +11,24 @@ html.locked body {
   }
 }
 
+// width container
+.vc_container {
+  @media (min-width: $small){
+    //width: 710px; // orig: 750px
+    width: 90vw;
+    max-width: 970px;
+  }
+  // @media (min-width: $medium){
+  //   width: 90vw;
+  //   max-width: 970px;
+  // }
+  // @media (min-width: $large){
+  //   //width: 930px; // orig: 970px
+  //   //width: 90vw;
+  //   //max-width: 980px;
+  // }
+}
+
 // center & overflow fix
 div#main-wrapper.vc_container {
   padding-left: 0;
