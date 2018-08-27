@@ -124,22 +124,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Filters
-#filters-container {
-  position: absolute;
-  top: -45px;
-  width: 100%;
-  left: 0;
-
-  .cbp-filter-item-active {
-    color: $pink;
-  }
-  .cbp-filter-item {
-    @extend %headline-medium;
-    font-size: 15px;
-  }
-}
-
 // Portfolio Items
 #portfolio-container {
   .cbp-l-grid-agency-title {

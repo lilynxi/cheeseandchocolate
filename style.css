@@ -18,7 +18,7 @@
 /* Colors */
 /* Gradient */
 /* Typography */
-h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-grid-agency-title, .heading-custom h4.heading, #menu-main-menu a, #filters-container .cbp-filter-item, .copyrights p, .heading-custom .para {
+h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-grid-agency-title, .heading-custom h4.heading, #menu-main-menu a, .copyrights p, #filters-container .cbp-filter-item, .heading-custom .para {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #595959;
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
   font-weight: 700 !important;
 }
 
-.heading-custom h4.heading, #menu-main-menu a, #filters-container .cbp-filter-item, .copyrights p {
+.heading-custom h4.heading, #menu-main-menu a, .copyrights p, #filters-container .cbp-filter-item {
   font-weight: 300 !important;
 }
 
@@ -117,19 +117,6 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
 }
 #menu-main-menu a {
   font-size: 15px !important;
-}
-
-#filters-container {
-  position: absolute;
-  top: -45px;
-  width: 100%;
-  left: 0;
-}
-#filters-container .cbp-filter-item-active {
-  color: #FC1368;
-}
-#filters-container .cbp-filter-item {
-  font-size: 15px;
 }
 
 #portfolio-container .cbp-l-grid-agency-title {
@@ -228,6 +215,33 @@ div#main-wrapper.vc_container {
   .project-single > .vc_container > .vc_row > .vc_col-sm-12 {
     padding-right: 0;
   }
+}
+
+.padding-container.portfolio-filtered {
+  margin-top: 80px;
+}
+@media (min-width: 604px) {
+  .padding-container.portfolio-filtered {
+    margin-top: 70px;
+  }
+}
+
+#filters-container {
+  position: absolute;
+  top: -60px;
+  width: 100%;
+  left: 0;
+}
+@media (min-width: 604px) {
+  #filters-container {
+    top: -44px;
+  }
+}
+#filters-container .cbp-filter-item-active {
+  color: #FC1368;
+}
+#filters-container .cbp-filter-item {
+  font-size: 15px;
 }
 
 #main-wrapper > .vc_container {
