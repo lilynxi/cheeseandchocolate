@@ -18,8 +18,11 @@
   border-top: none !important;
 }
 .vc_separator {
-  margin-bottom: 20px !important;
+  margin: 10px 0 12px !important;
   width: auto !important;
+  @media (min-width:$small){
+    margin: 20px 0 25px !important;
+  }
 }
 .vc_sep_line {
   @extend %separator;
@@ -48,6 +51,10 @@
 
 
 // Button
+.vc_btn3-container {
+  margin: 10px 0 0 !important;
+}
+
 .vc_btn3:hover {
   border-color: $pink !important;
   color: $white !important;

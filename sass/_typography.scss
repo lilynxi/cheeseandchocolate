@@ -38,7 +38,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px !important;
   letter-spacing: 1px;
   line-height: 1;
-  margin-top: 10px;
 }
 
 // global paragraphs and links
@@ -68,16 +67,23 @@ h1, h2, h3, h4, h5, h6 {
 
 // Element Titles -> Bold + Light
 .heading-custom {
-  margin: 10px 0 20px;
+
+  margin: 5px 0 10px;
+
+  @media(min-width:$small){
+    margin: 10px 0 20px;
+  }
 
   .heading,
   .para {
     margin: 0;
-    display: inline-block;
-    font-size: 32px;
+    display: inline;
+    //font-size: 32px;
+    font-size: 24px;
   
     @media(min-width: $small){
-      font-size: 36px;
+      //font-size: 36px;
+      font-size: 32px;
     }
     @media(min-width: $medium){
       font-size: 42px;
@@ -96,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 
     &::before {
       content: "//";
-      margin: 0 10px;
+      margin: 0 7px 0 3px;
     }
   }
 }

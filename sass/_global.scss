@@ -42,9 +42,13 @@ div#main-wrapper.vc_container {
 
 // Padding Container with white background
 .padding-container > div > div > div {
-  padding: $spacing;
+  padding: 10px;
   background: $white;
   box-shadow: 0px 0px 15px $box-shadow;
+  
+  @media (min-width: $small){
+    padding: $spacing;
+  }
 }
 
 // Padding Container with two columns (directors page)
@@ -72,7 +76,7 @@ div#main-wrapper.vc_container {
 .project-single {
   .vc_col-sm-12 {
     & > .vc_container {
-      margin-bottom: 20px;
+      margin-bottom: $spacing;
     }
   }
 
@@ -85,6 +89,7 @@ div#main-wrapper.vc_container {
     padding: $spacing;
     background: $white;
     box-shadow: 0px 0px 15px $box-shadow;
+    margin-bottom: $spacing;
   }
 
   // menu bottom (prev / next)
@@ -101,8 +106,20 @@ div#main-wrapper.vc_container {
   margin-bottom: $spacing;
 }
 
+// margin padding container two column
+.padding-container .vc_col-sm-6:first-child{
+  @media(max-width: $small){
+    margin-bottom: $spacing;
+  }
+}
+
 // testimonial title wrapper
 .no-margin {
   margin-top: -6px;
   margin-bottom: -8px;
+}
+
+// margin text-blocks main-content
+#main-wrapper .wpb_text_column.wpb_text_column {
+  margin-bottom: 5px;
 }

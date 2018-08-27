@@ -28,9 +28,16 @@
 
 <!-- Footer -->
 <footer id="footer" class="standard centered" >
-		<div class="copyrights">	
-			<p><?php echo wp_kses( kraft_get_option( 'footer-copyright', $footer_text ), array( 'a' =>  array( 'href' => array(),'target' => array() ) ) );  ?>	</p>
+		<div class="<?php echo esc_attr( $footer_layout_class ); ?>">
+			<div class="vc_row">
+				<div class="vc_col-sm-12">	
+					<div class="copyrights">	
+						<p><?php echo wp_kses( kraft_get_option( 'footer-copyright', $footer_text ), array( 'a' =>  array( 'href' => array(),'target' => array() ) ) );  ?>	</p>
+					</div>
+				</div>
+			</div>
 		</div>
+
 		<div class="<?php echo esc_attr( $footer_layout_class ); ?>">
 			<div class="vc_row">
 				<div class="vc_col-sm-12">				

@@ -7,7 +7,7 @@ header#header {
   margin: 0px !important;
 
   @media (min-width: $small){
-    margin: 60px 0 20px !important;
+    margin: 40px 0 20px !important;
   }
 }
 
@@ -46,9 +46,9 @@ header#header {
 
 
 #main-menu {
-  // @media (max-width:$small){
-  //   opacity: 0;
-  // }
+  @media (max-width: $small){
+    background-color: $white !important;
+  }
 
   @media (min-width: $small){
     padding-top: 50px;
@@ -57,8 +57,12 @@ header#header {
 
 #main-menu.display-menu {
   @media (max-width:$small){
-    //opacity: 1;
     height: calc(100vh - 90px) !important;
   }
 }
 
+#header.standard .header-wrapper #main-menu > ul > li.current-menu-item > a,
+#header.standard .header-wrapper #main-menu > ul > li > a:hover,
+#header.standard .header-wrapper #main-menu > ul > li > a:focus {
+  color: $pink !important;
+}
