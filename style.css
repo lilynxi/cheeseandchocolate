@@ -192,11 +192,6 @@ div#main-wrapper.vc_container {
     min-height: 340px;
   }
 }
-@media (min-width: 1200px) {
-  .padding-container.two-column > div > div > div {
-    min-height: 406px;
-  }
-}
 
 .project-single .vc_col-sm-12 > .vc_container {
   margin-bottom: 20px;
@@ -210,6 +205,9 @@ div#main-wrapper.vc_container {
   background: #fff;
   box-shadow: 0px 0px 15px #DDD;
   margin-bottom: 20px;
+}
+.project-single .project-nav a:hover {
+  border-bottom: 1px solid #FC1368;
 }
 @media (min-width: 768px) {
   .project-single > .vc_container > .vc_row > .vc_col-sm-12 {
@@ -386,6 +384,17 @@ header#header {
 #header.standard .header-wrapper #main-menu > ul > li > a:hover,
 #header.standard .header-wrapper #main-menu > ul > li > a:focus {
   color: #FC1368 !important;
+}
+
+#main-menu .sub-menu,
+#main-menu .sub-menu > li:hover a {
+  background-color: #fff !important;
+}
+
+@media (min-width: 768px) {
+  #main-menu .sub-menu {
+    box-shadow: 0px 0px 15px #DDD;
+  }
 }
 
 footer#footer {

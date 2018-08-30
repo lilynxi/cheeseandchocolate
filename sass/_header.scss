@@ -66,3 +66,14 @@ header#header {
 #header.standard .header-wrapper #main-menu > ul > li > a:focus {
   color: $pink !important;
 }
+
+// Dropdowns
+#main-menu .sub-menu,
+#main-menu .sub-menu > li:hover a {
+  background-color: $white !important;
+}
+#main-menu .sub-menu {
+  @media (min-width: $small){
+    box-shadow: 0px 0px 15px $box-shadow;
+  }
+}

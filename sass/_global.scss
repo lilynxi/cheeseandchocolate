@@ -57,9 +57,6 @@ div#main-wrapper.vc_container {
   @media (min-width: $medium){
     min-height: 340px;
   }
-  @media (min-width: $large){
-    min-height: 406px;
-  }
 }
 
 // Portfolio Detail Padding Container
@@ -80,6 +77,10 @@ div#main-wrapper.vc_container {
     background: $white;
     box-shadow: 0px 0px 15px $box-shadow;
     margin-bottom: $spacing;
+
+    a:hover {
+      border-bottom: 1px solid $pink;
+    }
   }
 
   // menu bottom (prev / next)
