@@ -57,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+// links
 #page-wrapper a{
   color: $dark-grey-text !important;
 
@@ -64,6 +65,15 @@ h1, h2, h3, h4, h5, h6 {
     color: $pink !important;
   }
 }
+
+// text links
+#page-wrapper .wpb_text_column a {
+  color: $pink !important;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 
 // Element Titles -> Bold + Light
 .heading-custom {

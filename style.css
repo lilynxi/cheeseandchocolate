@@ -69,6 +69,13 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
   color: #FC1368 !important;
 }
 
+#page-wrapper .wpb_text_column a {
+  color: #FC1368 !important;
+}
+#page-wrapper .wpb_text_column a:hover {
+  text-decoration: underline;
+}
+
 .heading-custom {
   margin: 5px 0 10px;
 }
