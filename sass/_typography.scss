@@ -5,7 +5,7 @@
 
 // Headline
 %headline {
-  font-family: $headline-font;
+  //font-family: $headline-font;
   text-transform: uppercase;
   color: $dark-grey-text;
   //font-size: 36px;
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   //letter-spacing: 1px;
   letter-spacing: 0 !important; 
   line-height: 1.5;
-  
+
   @media(min-width: $small){
     font-size: 14px !important;
   }
