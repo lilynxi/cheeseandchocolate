@@ -1,8 +1,7 @@
 
 @import 'variables';
 
-// Oswald: 200,300,400,500,600,700
-// TODO: remove unused font styles
+
 
 // Headline
 %headline {
@@ -20,12 +19,12 @@
 
 %headline-medium {
   @extend %headline;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
 }
 
 %headline-light {
   @extend %headline;
-  font-weight: 200 !important;
+  font-weight: 300 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 .heading-custom h4.heading {
   @extend %headline-medium;
   font-size: 15px !important;
-  letter-spacing: 1px;
+  //letter-spacing: 1px;
   line-height: 1;
 }
 
@@ -130,7 +129,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   a {
     @extend %headline-medium;
-    font-size: 15px !important;
+    font-size: 16px !important;
+    letter-spacing: 0 !important;
   }
 }
 
@@ -160,7 +160,12 @@ h1, h2, h3, h4, h5, h6 {
 // Footer Text
 .copyrights p {
   @extend %headline-medium;
-  font-size: 14px !important;
-  letter-spacing: 1px;
+  font-size: 12px !important;
+  //letter-spacing: 1px;
+  letter-spacing: 0 !important; 
   line-height: 1.5;
+  
+  @media(min-width: $small){
+    font-size: 14px !important;
+  }
 }
