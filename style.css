@@ -320,6 +320,11 @@ div#main-wrapper.vc_container {
   background-color: transparent !important;
 }
 
+.project-single .wpb_video_wrapper {
+  margin-top: -20px;
+  margin-bottom: -20px !important;
+}
+
 header#header {
   background-color: transparent;
   margin: 0px !important;
