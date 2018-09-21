@@ -320,9 +320,8 @@ div#main-wrapper.vc_container {
   background-color: transparent !important;
 }
 
-.project-single .wpb_video_wrapper {
-  margin-top: -20px;
-  margin-bottom: -20px !important;
+.project-single .wpb_video_widget.vc_video-aspect-ratio-169 .wpb_video_wrapper {
+  padding-top: 50.25%;
 }
 
 header#header {
