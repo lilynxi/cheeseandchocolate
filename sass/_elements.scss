@@ -20,9 +20,9 @@
 .vc_separator {
   margin: 10px 0 12px !important;
   width: auto !important;
-  @media (min-width:$small){
-    margin: 20px 0 25px !important;
-  }
+  // @media (min-width:$small){
+  //   margin: 20px 0 25px !important;
+  // }
 }
 .vc_sep_line {
   @extend %separator;

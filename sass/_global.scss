@@ -91,6 +91,13 @@ div#main-wrapper.vc_container {
   }
 }
 
+// Portfolio Overview Film Items
+#portfolio-container .cbp-item {
+  @media(min-width: 530px) and (max-width: $small){
+    width: 50% !important;
+  }
+}
+
 // Portfolio Overview Filters
 .padding-container.portfolio-filtered {
   margin-top: 80px;

@@ -40,13 +40,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // global paragraphs and links
-#page-wrapper p {
+#page-wrapper p,
+#page-wrapper p strong {
   color: $dark-grey-text;
 }
 
 #page-wrapper .para p {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.4;
 
   @media (min-width: $small){
     font-size: 15px;
@@ -77,11 +78,12 @@ h1, h2, h3, h4, h5, h6 {
 // Element Titles -> Bold + Light
 .heading-custom {
 
-  margin: 5px 0 10px;
+  //margin: 5px 0 10px;
+  margin: 10px 0 0;
 
-  @media(min-width:$small){
-    margin: 10px 0 20px;
-  }
+  // @media(min-width:$small){
+  //   margin: 10px 0 20px;
+  // }
 
   .heading,
   .para {

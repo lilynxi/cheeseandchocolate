@@ -40,13 +40,14 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
   line-height: 1;
 }
 
-#page-wrapper p {
+#page-wrapper p,
+#page-wrapper p strong {
   color: #595959;
 }
 
 #page-wrapper .para p {
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 @media (min-width: 768px) {
   #page-wrapper .para p {
@@ -74,12 +75,7 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
 }
 
 .heading-custom {
-  margin: 5px 0 10px;
-}
-@media (min-width: 768px) {
-  .heading-custom {
-    margin: 10px 0 20px;
-  }
+  margin: 10px 0 0;
 }
 .heading-custom .heading,
 .heading-custom .para {
@@ -225,6 +221,12 @@ div#main-wrapper.vc_container {
   }
 }
 
+@media (min-width: 530px) and (max-width: 768px) {
+  #portfolio-container .cbp-item {
+    width: 50% !important;
+  }
+}
+
 .padding-container.portfolio-filtered {
   margin-top: 80px;
 }
@@ -287,11 +289,6 @@ div#main-wrapper.vc_container {
 .vc_separator {
   margin: 10px 0 12px !important;
   width: auto !important;
-}
-@media (min-width: 768px) {
-  .vc_separator {
-    margin: 20px 0 25px !important;
-  }
 }
 
 .kraft-carousel .owl-nav {
@@ -424,7 +421,6 @@ footer#footer {
   border-bottom: thin solid #bbb;
 }
 .copyrights p {
-  max-width: 710px;
   margin: 0 auto;
 }
 
