@@ -61,6 +61,12 @@ jQuery(document).ready(function(){
 	if(window.location.href.indexOf('film-item') > -1) {
 		jQuery('#menu-main-menu li:nth-child(2').addClass('current-menu-item');
 	}
+	if(window.location.href.indexOf('testimonials') > -1) {
+		jQuery('#menu-main-menu li:nth-child(5').addClass('current-menu-item');
+	}
+	if(window.location.href.indexOf('director-detail') > -1) {
+		jQuery('#menu-main-menu li:nth-child(3').addClass('current-menu-item');
+	}
 });
 
 </script>

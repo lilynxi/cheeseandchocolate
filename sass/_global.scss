@@ -133,9 +133,17 @@ div#main-wrapper.vc_container {
 }
 
 // Portfolio Overview Film Items
-#portfolio-container .cbp-item {
-  @media(min-width: 530px) and (max-width: $small){
-    width: 50% !important;
+#portfolio-container {
+  .cbp-l-grid-agency-title {
+    margin-top: 10px;
+  }
+  .cbp-l-grid-agency-desc {
+    margin-top: 2px;
+  }
+  .cbp-item {
+    @media(min-width: 530px) and (max-width: $small){
+      width: 50% !important;
+    }
   }
 }
 

@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
 }
 
 .heading-custom {
-  margin: 10px 0 0;
+  margin: 0;
 }
 .heading-custom .heading,
 .heading-custom .para {
@@ -259,6 +259,12 @@ div#main-wrapper.vc_container {
   }
 }
 
+#portfolio-container .cbp-l-grid-agency-title {
+  margin-top: 10px;
+}
+#portfolio-container .cbp-l-grid-agency-desc {
+  margin-top: 2px;
+}
 @media (min-width: 530px) and (max-width: 768px) {
   #portfolio-container .cbp-item {
     width: 50% !important;
