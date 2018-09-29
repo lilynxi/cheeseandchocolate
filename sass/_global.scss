@@ -71,19 +71,60 @@ div#main-wrapper.vc_container {
     margin-top: 0 !important;
   }
 
+  // project nav (prev / next)
   .project-nav {
     margin-top: 0;
     padding: $spacing;
     background: $white;
     box-shadow: 0px 0px 15px $box-shadow;
     margin-bottom: $spacing;
+    //display: flex;
 
-    a:hover {
-      border-bottom: 1px solid $pink;
+    // a:hover {
+    //   border-bottom: 1px solid $pink;
+    // }
+
+    .page-prev,
+    .page-main,
+    .page-next {
+      @media (max-width:380px){
+        display: block;
+        width: 100%;
+        float: none;
+      }
+
+      &.btn-disable {
+        opacity: 0;
+        height: 0;
+        width: 100px;
+      }
+
+      a {
+        font-size: 0;
+        border: none;
+
+        &:after {
+          content: "";
+          height: 20px;
+          display: inline-block;
+        }
+      }
     }
+    .page-prev a:after {
+      background: url('assets/portfolio-prev.png') center center no-repeat;
+      width: 109px;
+    }
+    .page-main a:after {
+      background: url('assets/portfolio-gallery.png') center center no-repeat;
+      width: 105px;
+    }
+    .page-next a:after {
+      background: url('assets/portfolio-next.png') center center no-repeat;
+      width: 71px;
+    }
+
   }
 
-  // menu bottom (prev / next)
   > .vc_container > .vc_row > .vc_col-sm-12 {
     @media (min-width:$small){
       padding-right: 0;

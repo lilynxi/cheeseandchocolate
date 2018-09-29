@@ -56,6 +56,11 @@ jQuery(document).ready(function(){
 	jQuery('#menu-trigger').on('click',function(e){
     jQuery('html').toggleClass('locked');
 	});
+
+	//console.log(jQuery(location).attr('pathname'));
+	if(window.location.href.indexOf('film-item') > -1) {
+		jQuery('#menu-main-menu li:nth-child(2').addClass('current-menu-item');
+	}
 });
 
 </script>

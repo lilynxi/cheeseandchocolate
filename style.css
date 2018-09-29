@@ -212,8 +212,46 @@ div#main-wrapper.vc_container {
   box-shadow: 0px 0px 15px #DDD;
   margin-bottom: 20px;
 }
-.project-single .project-nav a:hover {
-  border-bottom: 1px solid #FC1368;
+@media (max-width: 380px) {
+  .project-single .project-nav .page-prev,
+  .project-single .project-nav .page-main,
+  .project-single .project-nav .page-next {
+    display: block;
+    width: 100%;
+    float: none;
+  }
+}
+.project-single .project-nav .page-prev.btn-disable,
+.project-single .project-nav .page-main.btn-disable,
+.project-single .project-nav .page-next.btn-disable {
+  opacity: 0;
+  height: 0;
+  width: 100px;
+}
+.project-single .project-nav .page-prev a,
+.project-single .project-nav .page-main a,
+.project-single .project-nav .page-next a {
+  font-size: 0;
+  border: none;
+}
+.project-single .project-nav .page-prev a:after,
+.project-single .project-nav .page-main a:after,
+.project-single .project-nav .page-next a:after {
+  content: "";
+  height: 20px;
+  display: inline-block;
+}
+.project-single .project-nav .page-prev a:after {
+  background: url("assets/portfolio-prev.png") center center no-repeat;
+  width: 109px;
+}
+.project-single .project-nav .page-main a:after {
+  background: url("assets/portfolio-gallery.png") center center no-repeat;
+  width: 105px;
+}
+.project-single .project-nav .page-next a:after {
+  background: url("assets/portfolio-next.png") center center no-repeat;
+  width: 71px;
 }
 @media (min-width: 768px) {
   .project-single > .vc_container > .vc_row > .vc_col-sm-12 {
@@ -317,8 +355,8 @@ div#main-wrapper.vc_container {
   background-color: transparent !important;
 }
 
-.project-single .wpb_video_widget.vc_video-aspect-ratio-169 .wpb_video_wrapper {
-  padding-top: 50.25%;
+.wpb_video_widget.vc_video-aspect-ratio-43 .wpb_video_wrapper {
+  padding-top: 50.25% !important;
 }
 
 header#header {
@@ -398,15 +436,13 @@ header#header {
   color: #FC1368 !important;
 }
 
-#main-menu .sub-menu,
-#main-menu .sub-menu > li:hover a {
-  background-color: #fff !important;
+#main-menu .sub-menu {
+  opacity: 0;
+  height: 0;
 }
 
-@media (min-width: 768px) {
-  #main-menu .sub-menu {
-    box-shadow: 0px 0px 15px #DDD;
-  }
+#main-menu > ul > li > a:after {
+  display: none;
 }
 
 footer#footer {
