@@ -6,7 +6,8 @@
 // Single Image
 //.wpb_content_element
 .wpb_single_image,
-.wpb_video_widget {
+.wpb_video_widget,
+.wpb_raw_code.wpb_content_element.wpb_raw_html {
   margin-bottom: 0 !important;
 }
 
@@ -67,3 +68,5 @@
 .wpb_video_widget.vc_video-aspect-ratio-43 .wpb_video_wrapper {
   padding-top: 50.25% !important;
 }
+
+

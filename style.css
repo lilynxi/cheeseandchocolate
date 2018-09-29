@@ -320,7 +320,8 @@ div#main-wrapper.vc_container {
 
 /* Wordpress Elements */
 .wpb_single_image,
-.wpb_video_widget {
+.wpb_video_widget,
+.wpb_raw_code.wpb_content_element.wpb_raw_html {
   margin-bottom: 0 !important;
 }
 
