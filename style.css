@@ -47,16 +47,16 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
 
 #page-wrapper .para p {
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 @media (min-width: 768px) {
   #page-wrapper .para p {
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 @media (min-width: 992px) {
   #page-wrapper .para p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -86,19 +86,19 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
 @media (min-width: 768px) {
   .heading-custom .heading,
   .heading-custom .para {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 @media (min-width: 992px) {
   .heading-custom .heading,
   .heading-custom .para {
-    font-size: 42px;
+    font-size: 32px;
   }
 }
 @media (min-width: 1200px) {
   .heading-custom .heading,
   .heading-custom .para {
-    font-size: 46px;
+    font-size: 34px;
   }
 }
 .heading-custom .para::before {

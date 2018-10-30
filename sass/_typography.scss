@@ -35,7 +35,6 @@ h1, h2, h3, h4, h5, h6 {
 .heading-custom h4.heading {
   @extend %headline-medium;
   font-size: 15px !important;
-  //letter-spacing: 1px;
   line-height: 1;
 }
 
@@ -47,13 +46,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #page-wrapper .para p {
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.2;
 
   @media (min-width: $small){
-    font-size: 15px;
+    font-size: 12px;
   }
   @media (min-width: $medium){
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -77,31 +76,22 @@ h1, h2, h3, h4, h5, h6 {
 
 // Element Titles -> Bold + Light
 .heading-custom {
-
-
-  //margin: 10px 0 0;
   margin: 0;
-
-  // @media(min-width:$small){
-  //   margin: 10px 0 20px;
-  // }
 
   .heading,
   .para {
     margin: 0;
     display: inline;
-    //font-size: 32px;
     font-size: 24px;
   
     @media(min-width: $small){
-      //font-size: 36px;
-      font-size: 32px;
+      font-size: 24px;
     }
     @media(min-width: $medium){
-      font-size: 42px;
+      font-size: 32px;
     }
     @media(min-width: $large){
-      font-size: 46px;
+      font-size: 34px;
     }
   }
 
