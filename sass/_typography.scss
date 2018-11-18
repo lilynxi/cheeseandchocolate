@@ -57,19 +57,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // links
-#page-wrapper a{
-  color: $dark-grey-text !important;
-
-  &:hover {
-    color: $pink !important;
-  }
-}
-
-// text links
+#page-wrapper a,
 #page-wrapper .wpb_text_column a {
-  color: $pink !important;
-  &:hover {
-    text-decoration: underline;
+  color: $dark-grey-text;
+  font-size: inherit;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $pink;
+  }
+
+  &:visited {
+    color: $dark-grey-text;
   }
 }
 

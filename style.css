@@ -60,18 +60,20 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
   }
 }
 
-#page-wrapper a {
-  color: #595959 !important;
-}
-#page-wrapper a:hover {
-  color: #FC1368 !important;
-}
-
+#page-wrapper a,
 #page-wrapper .wpb_text_column a {
-  color: #FC1368 !important;
+  color: #595959;
+  font-size: inherit;
 }
-#page-wrapper .wpb_text_column a:hover {
-  text-decoration: underline;
+#page-wrapper a:hover, #page-wrapper a:active, #page-wrapper a:focus,
+#page-wrapper .wpb_text_column a:hover,
+#page-wrapper .wpb_text_column a:active,
+#page-wrapper .wpb_text_column a:focus {
+  color: #FC1368;
+}
+#page-wrapper a:visited,
+#page-wrapper .wpb_text_column a:visited {
+  color: #595959;
 }
 
 .heading-custom {
