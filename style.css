@@ -60,16 +60,12 @@ h1, h2, h3, h4, h5, h6, .heading-custom .heading, #portfolio-container .cbp-l-gr
   }
 }
 
-#page-wrapper a,
 #page-wrapper .wpb_text_column a {
   color: #595959;
   font-size: inherit;
   font-weight: inherit;
 }
-#page-wrapper a:hover, #page-wrapper a:active, #page-wrapper a:focus,
-#page-wrapper .wpb_text_column a:hover,
-#page-wrapper .wpb_text_column a:active,
-#page-wrapper .wpb_text_column a:focus {
+#page-wrapper .wpb_text_column a:hover, #page-wrapper .wpb_text_column a:active, #page-wrapper .wpb_text_column a:focus {
   color: #FC1368;
 }
 
