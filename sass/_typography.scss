@@ -61,15 +61,12 @@ h1, h2, h3, h4, h5, h6 {
 #page-wrapper .wpb_text_column a {
   color: $dark-grey-text;
   font-size: inherit;
+  font-weight: inherit;
 
   &:hover,
   &:active,
   &:focus {
     color: $pink;
-  }
-
-  &:visited {
-    color: $dark-grey-text;
   }
 }
 
